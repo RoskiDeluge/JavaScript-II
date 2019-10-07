@@ -70,19 +70,37 @@ function multiplyNums(x, y, cb) {
 const test4 = multiplyNums(2, 3, item => item);
 console.log(test4);
 
+// function contains(item, list, cb) {
+//   // contains checks if an item is present inside of the given array/list.
+//   // Pass true to the callback if it is, otherwise pass false.
+//   if (list.includes(item)) {
+//     return cb(true);
+//   } else {
+//     return cb(false);
+//   }
+// }
+
+// contains('Gum', items, contains => console.log(contains));
+
+
+//K. Gribble's code: 
+
 function contains(item, list, cb) {
   // contains checks if an item is present inside of the given array/list.
   // Pass true to the callback if it is, otherwise pass false.
-  
-}
-
-const test5 = contains('Gum', items, item => item);
-console.log(test5);
+  if (list.includes(item)) {
+    return cb(true);
+  } else {
+    return cb(false);
+  }
+ }
+ contains('Gum', items, contains => console.log(contains));
+ contains('Chalk', items, contains => console.log(contains));
 
 /* STRETCH PROBLEM */
 
 function removeDuplicates(array, cb) {
   // removeDuplicates removes all duplicate values from the given array.
-  // Pass the duplicate free array to the callback function.
+  // Pass the duplicate free array to the cal   lback function.
   // Do not mutate the original array.
 }
