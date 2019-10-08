@@ -78,7 +78,7 @@ function contains(item, list, cb) {
   if (list.includes(item)) {
     return cb(true)
   } else {
-    return cb(false)
+    return cb(false) 
   }
  }
 
