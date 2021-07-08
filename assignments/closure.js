@@ -5,6 +5,24 @@
 // The outer scope can be a parent function, or the top level of the script.
 
 
+// When powOfTwo() is invoked it raises the previous number in the count to the power of 2.
+
+const powOfTwo = () => {
+  let count = 0;
+  return () => Math.pow(count++, 2);
+};
+
+const newPowOfTwo = powOfTwo();
+console.log(newPowOfTwo());
+console.log(newPowOfTwo());
+console.log(newPowOfTwo());
+console.log(newPowOfTwo());
+console.log(newPowOfTwo());
+console.log(newPowOfTwo());
+
+
+
+
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
 
 
